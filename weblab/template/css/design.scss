@@ -1,0 +1,126 @@
+/**-************************************-**/
+/** Author   :	Romy R Michael			-**/
+/** File Info:	resetUicss_v_2.32		-**/
+/** email    :	romyrmichael@gmail.com	-**/
+/** website  :	www.romyrmichael.co.nf	-**/
+/** Framework:	SASS v3.3.15			-**/
+/**-************************************-**/
+@charset "utf-8";body, html,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0px;padding:0px}fieldset,{border:0px}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none; list-style-position:outside;}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}legend{color:#000}a:link,a:visited,a:hover,a:active {text-decoration:none;  outline:0px none; border:none 0px;}a:active { outline:none 0px; border:none 0px; }*|*:-moz-any-link img, img[usemap], object[usemap],*|*:-moz-any-link:focus,:focus {outline-style:none;outline-width: 0px;border:none 0px;} a img{ border:none 0px;}html {-webkit-font-smoothing: subpixel-antialiased;}.mto{margin-top:0px !important;}.mro{margin-right:0px !important;}.mbo{margin-bottom:0px !important;}.mlo{margin-left:0px !important;}.bto{border-top:0px none !important;}.bro{border-right:0px none !important;}.bbo{border-bottom:0px none !important;}.blo{border-left:0px none !important;}.left{float:left !important;}.right{float:right !important;}.ato{top:0px;}.aro{right:0px;}.abo{bottom:0px;}.alo{left:0px;}.bgno{background:none !important;}.pto{padding-top:0px !important;}.pro{padding-right:0px !important;}.pbo{padding-bottom:0px !important;}.plo{padding-left:0px !important;}br:after{content:" "; width:100%; display:block; height:20px; float:left;}.nopadding{padding:0px  !important;}section{width:100%;}.hideThis{display: none;}
+/*------------------ResetCss ends here-----------------------*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+	   -o-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($anim){
+	  -webkit-transition: $anim;
+		 -moz-transition: $anim;
+		  -ms-transition: $anim;
+		   -o-transition: $anim;
+		      transition: $anim;
+	}
+@mixin opacity($ovalue){
+	  -webkit-opacity: $ovalue;
+		 -moz-opacity: $ovalue;
+		  -ms-opacity: $ovalue;
+		   -o-opacity: $ovalue;
+		      opacity: $ovalue;
+	}
+@mixin rotateX($xRotate){
+-webkit-transform: rotateX($xRotate);
+   -moz-transform: rotateX($xRotate);
+	-ms-transform: rotateX($xRotate);
+	 -o-transform: rotateX($xRotate);
+		transform: rotateX($xRotate);
+}
+@mixin rotateY($yRotate){
+-webkit-transform: rotateY($yRotate);
+   -moz-transform: rotateY($yRotate);
+	-ms-transform: rotateY($yRotate);
+	 -o-transform: rotateY($yRotate);
+		transform: rotateY($yRotate);
+}
+@mixin backgroundSize($bgSize){
+-webkit-background-size: $bgSize;
+   -moz-background-size: $bgSize;
+	-ms-background-size: $bgSize;
+	 -o-background-size: $bgSize;
+		background-size: $bgSize;
+}
+@mixin shadow($shadowPos){ 
+-webkit-box-shadow: $shadowPos;
+   -moz-box-shadow: $shadowPos;
+    -ms-box-shadow: $shadowPos;
+     -o-box-shadow: $shadowPos;
+        box-shadow: $shadowPos;
+	}
+/*------Variables-------*/
+$darkblue:#0b2943;
+$lightblue:#004a9b;
+/*------Variables-------*/
+div, li, path, a{@include transition(all ease-in .3s);}
+body{background:url("../images/bg.jpg");}
+.navbar{border-radius: 0px;min-height: 0px; border:0px solid transparent}
+.platinoNav{background:$darkblue; padding: 0px 0px 0px;}
+.navbar-nav{margin:0px 0px;
+    li a {padding: 5px 20px 5px 20px; text-transform: uppercase;}
+    li.active a:link, li.active a:visited, li:hover{background:$lightblue; color: #fff;}
+}
+.navbar-header{background:$darkblue;}
+@media (min-width: 2801px) and (max-width:8192px) {
+	
+}
+
+@media (max-width: 2800px) {
+
+}
+
+@media (max-width: 1800px) {
+		
+
+}
+
+@media (min-width: 1401px) and (max-width:1799){
+			
+}
+
+@media (min-width: 1280px) and (max-width:1400){
+
+}
+
+@media (min-width: 1200px) and (max-width:1279){
+	
+
+}
+ 
+/* portable laptops 1024x600 */ 
+@media (min-width: 980px) and (max-width: 1199px) {
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {	
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px){
+
+}
+ /* java phones and down */
+@media (min-width: 340px) and (max-width:479px){
+
+ }
+ 
+  /* java phones and down */
+@media (min-width: 80px) and (max-width:339px){
+
+ }
